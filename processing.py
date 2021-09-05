@@ -27,7 +27,7 @@ def deEmojify(text) -> str:
                            "]+", flags = re.UNICODE)
     return regrex_pattern.sub(r'',text)
 
-def isEnglish(text, alphabet=set('абвдеёжзийклмнопрстуфхцчшщъыьэюя')):
+def isEnglish(text, alphabet=set('абвдеёжзийклмнопрстуфхцчшщъыьэюя')) -> bool:
     '''
     print(isEnglish('test')) # True
     print(isEnglish('тест')) # False
